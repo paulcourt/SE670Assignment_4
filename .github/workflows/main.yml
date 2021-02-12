@@ -30,7 +30,8 @@ jobs:
             Java-version: 1.8
       
       - name: Step 3 - Build Maven Project
-        run: mvn -B package --file SE670_Assignment_3/nbproject/build-impl.xml
+        run: mvn --batch-mode --update-snapshots verify
+      #  run: mvn -B package --file SE670_Assignment_3/nbproject/build-impl.xml
 
       - name: Step 4 List the current directory
         run: ls -a
