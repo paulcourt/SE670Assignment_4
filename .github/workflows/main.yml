@@ -30,7 +30,7 @@ jobs:
             Java-version: 1.8
       
       - name: Step 3 - Build Maven Project
-        run: mvn -B package --file pom.xml
+        run: mvn -B package --file build.xml
 
       - name: Step 4 List the current directory
         run: ls -a
